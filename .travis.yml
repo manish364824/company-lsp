@@ -1,5 +1,6 @@
 arch:
  - amd64
+ - ppc64le
 language: emacs-lisp
 sudo: required
 dist: trusty
@@ -10,6 +11,7 @@ matrix:
 env:
   - EMACS_VERSION=25.1
   - EMACS_VERSION=26.1
+  - EMACS_VERSION=27.1
   - EMACS_VERSION=snapshot
 before_install:
   - export PATH="$HOME/bin:$PATH"
